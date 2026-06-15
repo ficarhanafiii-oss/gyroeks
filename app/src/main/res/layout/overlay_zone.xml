@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#330099ff">
+
+    <!-- Drag handle — top bar -->
+    <LinearLayout
+        android:id="@+id/zoneDragHandle"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#660099ff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⠿ GYRO ZONE — drag"
+            android:textColor="#ffffff"
+            android:textSize="11sp"/>
+    </LinearLayout>
+
+    <!-- Border indicators -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:background="#0099ff"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#0099ff"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#0099ff"/>
+
+    <!-- Resize handle — bottom right -->
+    <TextView
+        android:id="@+id/zoneResizeHandle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom|end"
+        android:background="#0099ff"
+        android:gravity="center"
+        android:text="⤡"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+
+</FrameLayout>
